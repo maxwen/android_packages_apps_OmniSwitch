@@ -280,7 +280,7 @@ public class SwitchLayout implements OnShowcaseEventListener {
             PackageTextView textView = (PackageTextView)mCurrentSelection;
 
             textView.setBackground(BitmapUtils.glow(mContext.getResources(),
-                            mConfiguration.mGlowColor,
+                            mConfiguration.mFlatStyle ? mConfiguration.mFlatGlowColor : mConfiguration.mGlowColor,
                             textView.getBackground()));
         }
     };

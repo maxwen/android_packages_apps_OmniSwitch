@@ -24,4 +24,5 @@
     <color name="text_shadow">#ff000000</color>
     <color name="bg_flat_color">#ffeaeaea</color>
     <color name="button_bg_flat_color">#ff656565</color>
+    <color name="flat_glow_color">#ff33b5e5</color>
 </resources>

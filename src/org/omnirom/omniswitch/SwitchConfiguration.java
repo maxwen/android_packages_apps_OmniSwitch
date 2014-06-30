@@ -50,6 +50,7 @@ public class SwitchConfiguration {
     public int mDragHandleColor;
     public float mDragHandleOpacity;
     public int mGlowColor;
+    public int mFlatGlowColor;
     public int mDefaultColor;
     public int mIconDpi;
     public boolean mAutoHide;
@@ -72,7 +73,6 @@ public class SwitchConfiguration {
     public static SwitchConfiguration mInstance;
     private WindowManager mWindowManager;
     private int mDefaultHandleHeight;
-    private int mHorizontalMargin;
 
     public static SwitchConfiguration getInstance(Context context) {
         if (mInstance == null) {
@@ -92,8 +92,8 @@ public class SwitchConfiguration {
         mDefaultColor = context.getResources()
                 .getColor(R.color.holo_blue_light);
         mGlowColor = context.getResources().getColor(R.color.glow_color);
+        mFlatGlowColor = context.getResources().getColor(R.color.flat_glow_color);
         mDefaultHandleHeight = Math.round(100 * mDensity);
-        mHorizontalMargin = Math.round(5 * mDensity);
         mRestrictedMode = !hasSystemPermission(context);
         mLevelHeight = Math.round(80 * mDensity);
         mItemChangeWidthX = Math.round(40 * mDensity);
